@@ -116,6 +116,10 @@ def play():
             elif(card_value(player) > card_value(dealer)):
                 show_hands(True)
                 print('Player Wins!')
+            elif(card_value(player) == card_value(dealer)):
+                show_hands(True)
+                print('Push')
+                print('Tie!')
             else:
                 show_hands(True)
                 print('Dealer Wins!')
